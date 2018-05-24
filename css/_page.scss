@@ -4,7 +4,11 @@ $glass: 0.3;
 
 
 .bg-img{
-    background: url(../img/header-img.jpg) -150px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+       ),
+       url(../img/header-img.jpg) -150px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -76,6 +80,9 @@ $glass: 0.3;
 .section-c{
     text-align: center;
     padding: 3em 0;
+    @media screen and (min-width: 400px){
+        padding: 6em 0;
+    }
     .bg-transparent-3{
         background: $transparent;
         opacity: $glass;
