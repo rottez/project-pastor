@@ -1,24 +1,21 @@
 $text-color: #ffffff;
 $transparent: #D1C9F2;
 $glass: 0.3;
-
-
 .bg-img{
     background: linear-gradient(
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
-       ),
-       url(../img/header-img.jpg) -150px;
+    ),
+    url(../img/header-img.jpg) -150px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 580px;
     @media screen and (min-width: 375px){
-        height: 650px;
+        height: 600px;
     }
     @media screen and (min-width: 400px){
-        height: 700px;
+        height: 625px;
     }
-    
 }
 .section-a{
     padding-top: 4em;
@@ -62,12 +59,12 @@ $glass: 0.3;
             font-size: 1.5rem;
             bottom: 11.5em;
             letter-spacing: 8px;
-		}   
+        }   
         @media screen and (min-width: 400px){
             font-size: 1.7rem;
             bottom: 11.5em;
             letter-spacing: 8px;
-		}   
+        }   
     }
     .bg-transparent-2{
         background: orange;
@@ -111,3 +108,38 @@ $glass: 0.3;
     }
 }
 // kontakt-end
+.content {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: black;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    .box {
+        background:#FBFBFB;
+        width: 100%;
+        margin: 0 auto;
+        // border: 0.5px solid lightgrey;
+        border-bottom: 1px solid black;
+        i {
+            font-size: 3rem;
+            color: grey;
+            padding: .7em 0;
+        }
+        h1 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 1em;
+            color: #D4902A;
+        }
+        p {
+            font-size: 1.1rem;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 1.5em;
+            color: #77674F;
+        }
+    }
+}

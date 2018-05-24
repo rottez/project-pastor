@@ -2,18 +2,18 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 580px;
 }
 
 @media screen and (min-width: 375px) {
   .bg-img {
-    height: 650px;
+    height: 600px;
   }
 }
 
 @media screen and (min-width: 400px) {
   .bg-img {
-    height: 700px;
+    height: 625px;
   }
 }
 
@@ -135,6 +135,45 @@
   color: #ffffff;
   position: relative;
   bottom: 1.4em;
+}
+
+.content {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: black;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+}
+
+.content .box {
+  background: #FBFBFB;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.content .box i {
+  font-size: 3rem;
+  color: grey;
+  padding: .7em 0;
+}
+
+.content .box h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  color: #D4902A;
+}
+
+.content .box p {
+  font-size: 1.1rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+  color: #77674F;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
