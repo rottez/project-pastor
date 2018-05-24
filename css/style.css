@@ -162,14 +162,13 @@
 
 .content .box h1 {
   font-size: 1.1rem;
-  font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 1em;
   color: #D4902A;
 }
 
 .content .box p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 1.5em;
