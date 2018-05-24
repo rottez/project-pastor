@@ -1,0 +1,97 @@
+$text-color: #ffffff;
+$transparent: #D1C9F2;
+$glass: 0.3;
+
+
+.bg-img{
+    background: url(../img/header-img.jpg) -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    @media screen and (min-width: 375px){
+        height: 650px;
+    }
+    @media screen and (min-width: 400px){
+        height: 700px;
+    }
+    
+}
+.section-a{
+    padding-top: 4em;
+    //
+    .ontop{
+        position: relative;
+        top: 1.6em;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: $text-color;
+    }
+    .bg-transparent{
+        background: $transparent;
+        opacity: $glass;
+        height: 3em;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+// specijalizovan-servis-end
+.section-b{
+    padding: 2em 0 0 .5em;
+    height: 250px;
+    //
+    h2{
+        position: relative;
+        bottom: 11.8em;
+        color: $text-color;
+        font-size: 1.3rem;
+        line-height: 2;
+        letter-spacing: 6px;
+        padding-left: .1em;
+        @media screen and (min-width: 375px){
+            font-size: 1.5rem;
+            bottom: 11.5em;
+            letter-spacing: 8px;
+		}   
+        @media screen and (min-width: 400px){
+            font-size: 1.7rem;
+            bottom: 11.5em;
+            letter-spacing: 8px;
+		}   
+    }
+    .bg-transparent-2{
+        background: orange;
+        opacity: $glass;
+        height: 15em;
+        width: 6%;
+        @media screen and (min-width: 375px){
+            height: 16.5em;
+        } 
+        @media screen and (min-width: 400px){
+            height: 19em;
+        } 
+    }
+}
+// welcome-text-end
+.section-c{
+    text-align: center;
+    padding: 3em 0;
+    .bg-transparent-3{
+        background: $transparent;
+        opacity: $glass;
+        height: 2.1em;
+        width: 35%;
+        margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $text-color;
+        position: relative;
+        bottom: 1.4em;
+    }
+}
+// kontakt-end
