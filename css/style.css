@@ -207,21 +207,19 @@ body {
 
 .description .txt-wrapper h3 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #77674F;
-  letter-spacing: 1px;
-  line-height: 1.2;
+  padding-bottom: 1em;
 }
 
 .description .txt-wrapper p {
+  width: 95%;
   padding: 1em 0;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
-  letter-spacing: 1px;
-  line-height: 1.2;
 }
 
 .description .txt-wrapper span {
