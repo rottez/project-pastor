@@ -1,3 +1,7 @@
+body {
+  background: #FBFBFB;
+}
+
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
   background-repeat: no-repeat;
@@ -50,9 +54,7 @@
 }
 
 .section-b h2 {
-  position: relative;
-  bottom: 11.8em;
-  color: #ffffff;
+  color: orange;
   font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 6px;
@@ -67,18 +69,18 @@
 
 @media screen and (min-width: 375px) {
   .section-b h2 {
-    font-size: 1.5rem;
-    bottom: 11.5em;
-    letter-spacing: 8px;
+    font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 400px) {
   .section-b h2 {
-    font-size: 1.7rem;
-    bottom: 11.5em;
-    letter-spacing: 8px;
+    font-size: 1.9rem;
   }
+}
+
+.section-b span {
+  color: #ffffff;
 }
 
 .section-b .bg-transparent-2 {
@@ -111,9 +113,15 @@
   padding: 3em 0;
 }
 
+@media screen and (min-width: 375px) {
+  .section-c {
+    padding: 5em 0;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .section-c {
-    padding: 6em 0;
+    padding: 8em 0;
   }
 }
 
@@ -138,6 +146,7 @@
 }
 
 .content {
+  margin: 3em 0;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -177,6 +186,46 @@
   margin: 0 auto;
   padding-bottom: 1.5em;
   color: #77674F;
+}
+
+.description {
+  padding: 4em 0;
+  background: #edf0f3;
+}
+
+.description .txt-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.description .txt-wrapper h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1em;
+  color: #D4902A;
+}
+
+.description .txt-wrapper h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #77674F;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.description .txt-wrapper p {
+  padding: 1em 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #77674F;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.description .txt-wrapper span {
+  font-weight: bold;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

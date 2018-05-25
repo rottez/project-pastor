@@ -1,6 +1,9 @@
 $text-color: #ffffff;
 $transparent: #D1C9F2;
 $glass: 0.3;
+body{
+    background:#FBFBFB;
+}
 .bg-img{
     background: linear-gradient(
         rgba(0, 0, 0, 0.3), 
@@ -45,9 +48,7 @@ $glass: 0.3;
     }
     //
     h2{
-        position: relative;
-        bottom: 11.8em;
-        color: $text-color;
+        color: orange;
         font-size: 1.3rem;
         line-height: 2;
         letter-spacing: 6px;
@@ -56,15 +57,14 @@ $glass: 0.3;
             font-size: 1.1rem;
         }
         @media screen and (min-width: 375px){
-            font-size: 1.5rem;
-            bottom: 11.5em;
-            letter-spacing: 8px;
+            font-size: 1.7rem;
         }   
         @media screen and (min-width: 400px){
-            font-size: 1.7rem;
-            bottom: 11.5em;
-            letter-spacing: 8px;
+            font-size: 1.9rem;
         }   
+    }
+    span {
+        color: $text-color;
     }
     .bg-transparent-2{
         background: orange;
@@ -86,8 +86,11 @@ $glass: 0.3;
 .section-c{
     text-align: center;
     padding: 3em 0;
+    @media screen and (min-width: 375px){
+        padding: 5em 0;
+    }
     @media screen and (min-width: 400px){
-        padding: 6em 0;
+        padding: 8em 0;
     }
     .bg-transparent-3{
         background: $transparent;
@@ -109,6 +112,7 @@ $glass: 0.3;
 }
 // kontakt-end
 .content {
+    margin: 3em 0;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -122,8 +126,6 @@ $glass: 0.3;
         background:#FBFBFB;
         width: 100%;
         margin: 0 auto;
-        // border: 0.5px solid lightgrey;
-        border-bottom: 1px dashed grey;
         i {
             font-size: 3rem;
             color: grey;
@@ -145,4 +147,39 @@ $glass: 0.3;
             color: #77674F;
         }
     }
+}
+.description {
+    padding: 4em 0;
+    background:rgb(237, 240, 243);
+    .txt-wrapper {
+        width: 85%;
+        margin: 0 auto;
+        h1 {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 2rem;
+            padding-bottom: 1em;
+            color: #D4902A;
+        }
+        h3{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #77674F;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        p{
+            padding: 1em 0;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: lighter;
+            color: #77674F;
+            letter-spacing: 1px;
+            line-height: 1.2;  
+        }
+        span {
+            font-weight: bold;
+        }   
+    }
+    
 }
