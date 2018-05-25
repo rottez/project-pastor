@@ -116,12 +116,8 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    background: black;
     letter-spacing: 1.2px;
     line-height: 1.2;
-    .box:last-child{
-        border-bottom: none;
-    }
     .box {
         background:#FBFBFB;
         width: 100%;
@@ -141,7 +137,8 @@ body{
         p {
             font-family: 'Work Sans', sans-serif;
             font-size: 1rem;
-            width: 90%;
+            font-weight: lighter;
+            width: 75%;
             margin: 0 auto;
             padding-bottom: 1.5em;
             color: #77674F;
@@ -149,6 +146,8 @@ body{
     }
 }
 .description {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 4em 0;
     background:rgb(237, 240, 243);
     .txt-wrapper {
@@ -180,5 +179,13 @@ body{
             font-weight: bold;
         }   
     }
-    
+    .img {
+        padding-top: 1em;
+        width: 85%;
+        margin: 0 auto;
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
 }
