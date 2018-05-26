@@ -260,7 +260,7 @@ body {
 
 .gallery {
   text-align: left;
-  padding-top: 4em;
+  padding: 4em 0;
 }
 
 .gallery .img-wrap {
@@ -271,7 +271,7 @@ body {
 .gallery .img-wrap h1 {
   font-family: 'Black Han Sans', sans-serif;
   font-size: 2rem;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   color: #D4902A;
 }
 
@@ -284,7 +284,7 @@ body {
 }
 
 .gallery .img-wrap .img-box {
-  padding: 2em 0 1em 0;
+  padding: 1em 0 1em 0;
   text-align: left;
 }
 
@@ -317,6 +317,58 @@ body {
 .gallery .img-wrap .img-grid img {
   width: 98%;
   margin: 0 auto;
+}
+
+.gallery .img-wrap span {
+  padding: .5em 0;
+  font-weight: bold;
+}
+
+.gallery .img-wrap span a {
+  text-decoration: none;
+  color: #77674F;
+}
+
+.info {
+  padding-top: 2em;
+  background: #2e75e8;
+  text-align: left;
+  color: lightgrey;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.info .gmaps {
+  text-align: center;
+}
+
+.info .gmaps iframe {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.info i {
+  padding: .2em 0;
+  padding-right: .5em;
+}
+
+.info .txt-wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.info h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.info p {
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 2em 0;
+  line-height: 1.2;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

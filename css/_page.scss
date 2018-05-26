@@ -205,14 +205,14 @@ body{
 }
 .gallery {
     text-align: left;
-    padding-top: 4em;
+    padding: 4em 0;
     .img-wrap {
         width: 85%;
         margin: 0 auto;
         h1 {
             font-family: 'Black Han Sans', sans-serif;
             font-size: 2rem;
-            padding-bottom: 1em;
+            padding-bottom: 0.5em;
             color: #D4902A;
         }
         p{
@@ -223,7 +223,7 @@ body{
             color: #77674F;
         }
         .img-box {
-             padding: 2em 0 1em 0;
+             padding: 1em 0 1em 0;
              text-align: left;
              h1 {
                 font-family: 'Black Han Sans', sans-serif;
@@ -252,5 +252,50 @@ body{
                 margin: 0 auto;
             }
         }
+        span{
+            padding: .5em 0;
+            font-weight: bold;
+            a{
+                text-decoration: none;
+                color:#77674F;
+            }
+            
+        }
     }
+}
+.info {
+    padding-top: 2em;
+    background:#2e75e8;
+    text-align: left;
+    color: lightgrey;
+    font-family: 'Work Sans', sans-serif;
+    .gmaps {
+        text-align: center;
+        iframe{
+            width: 100%;
+            height: 300px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    i {
+        padding: .2em 0;
+        padding-right: .5em;
+    }
+    .txt-wrap {
+        width: 85%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: lighter;
+        padding: 2em 0;
+        line-height: 1.2;
+    }
+
 }
