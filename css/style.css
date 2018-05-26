@@ -63,19 +63,13 @@ body {
 
 @media screen and (max-width: 306px) {
   .section-b h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 375px) {
   .section-b h2 {
-    font-size: 1.7rem;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .section-b h2 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -187,7 +181,7 @@ body {
 .description {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 4em 0;
+  padding: 4em 0 2em 0;
   background: #edf0f3;
 }
 
@@ -225,15 +219,76 @@ body {
 }
 
 .description .img {
-  text-align: center;
+  text-align: left;
   padding-top: 1em;
   width: 85%;
   margin: 0 auto;
 }
 
 .description .img img {
-  width: 50%;
+  width: 30%;
   height: auto;
+}
+
+.gallery {
+  text-align: left;
+  padding-top: 4em;
+}
+
+.gallery .img-wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.gallery .img-wrap h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1em;
+  color: #D4902A;
+}
+
+.gallery .img-wrap p {
+  width: 95%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #77674F;
+}
+
+.gallery .img-wrap .img-box {
+  padding: 2em 0 1em 0;
+  text-align: left;
+}
+
+.gallery .img-wrap .img-box h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #D4902A;
+  padding: 0;
+}
+
+.gallery .img-wrap .img-box img {
+  width: 100%;
+}
+
+.gallery .img-wrap .img-box p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #77674F;
+  padding: .5em 0;
+}
+
+.gallery .img-wrap .img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0.1em;
+}
+
+.gallery .img-wrap .img-grid img {
+  width: 98%;
+  margin: 0 auto;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

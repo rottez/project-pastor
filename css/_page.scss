@@ -54,13 +54,10 @@ body{
         letter-spacing: 6px;
         padding-left: .1em;
         @media screen and (max-width: 306px){
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
         @media screen and (min-width: 375px){
-            font-size: 1.7rem;
-        }   
-        @media screen and (min-width: 400px){
-            font-size: 1.9rem;
+            font-size: 1.5rem;
         }   
     }
     span {
@@ -148,7 +145,7 @@ body{
 .description {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 4em 0;
+    padding: 4em 0 2em 0;
     background:rgb(237, 240, 243);
     .txt-wrapper {
         width: 85%;
@@ -180,13 +177,64 @@ body{
         }   
     }
     .img {
-        text-align: center;
+        text-align: left;
         padding-top: 1em;
         width: 85%;
         margin: 0 auto;
         img {
-            width: 50%;
+            width: 30%;
             height: auto;
+        }
+    }
+}
+.gallery {
+    text-align: left;
+    padding-top: 4em;
+    .img-wrap {
+        width: 85%;
+        margin: 0 auto;
+        h1 {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 2rem;
+            padding-bottom: 1em;
+            color: #D4902A;
+        }
+        p{
+            width: 95%;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: lighter;
+            color: #77674F;
+        }
+        .img-box {
+             padding: 2em 0 1em 0;
+             text-align: left;
+             h1 {
+                font-family: 'Black Han Sans', sans-serif;
+                font-size: 1rem;
+                font-weight: lighter;
+                color: #D4902A;
+                padding: 0;
+             }
+             img {
+                width: 100%;
+            }
+            p{
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1rem;
+                font-weight: lighter;
+                color: #77674F;
+                padding: .5em 0;
+            }
+        }
+        .img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 0.1em;
+            img{
+                width: 98%;
+                margin: 0 auto;
+            }
         }
     }
 }
