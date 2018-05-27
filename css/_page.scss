@@ -112,7 +112,7 @@ body{
     margin: 3em 0;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     letter-spacing: 1.2px;
     line-height: 1.2;
     .box {
@@ -169,6 +169,7 @@ body{
     .txt-wrapper {
         width: 85%;
         margin: 0 auto;
+        line-height: 1.2;
         h1 {
             font-family: 'Black Han Sans', sans-serif;
             font-size: 2rem;
@@ -209,6 +210,13 @@ body{
     .img-wrap {
         width: 85%;
         margin: 0 auto;
+            @media screen and (min-width: 1000px){
+                .gallery-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
         h1 {
             font-family: 'Black Han Sans', sans-serif;
             font-size: 2rem;
@@ -262,6 +270,47 @@ body{
             
         }
     }
+}
+.modal{
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0, 0.9);
+    .modal-content{
+        -webkit-animation-name: smallToBig;
+        -webkit-animation-duration: 0.2s;
+        animation-name: smallToBig;
+        animation-duration: 0.2s;
+        padding-top: 12em;
+        margin: 0 auto;
+        width: 95%;
+        @keyframes smallToBig{
+            from { width: 20%;}
+            to { width: 95%;}
+        }
+        @-webkit-keyframes smallToBig{
+            from { width: 20%;}
+            to { width: 95%;}
+        }
+        img{
+            width: 99%;
+            height: auto;
+            border: 2px solid white;
+           
+        }
+        i{
+            padding: .5em 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+
 }
 .info {
     padding-top: 2em;
