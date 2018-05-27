@@ -351,30 +351,19 @@ body {
 }
 
 .modal .modal-content {
-  -webkit-animation-name: smallToBig;
-  -webkit-animation-duration: 0.2s;
-  animation-name: smallToBig;
-  animation-duration: 0.2s;
-  padding-top: 12em;
+  animation-name: OPACITY;
+  animation-duration: 0.5s;
+  padding-top: 11em;
   margin: 0 auto;
   width: 95%;
 }
 
-@keyframes smallToBig {
+@keyframes OPACITY {
   from {
-    width: 20%;
+    opacity: 0.1;
   }
   to {
-    width: 95%;
-  }
-}
-
-@-webkit-keyframes smallToBig {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 95%;
+    opacity: 1;
   }
 }
 

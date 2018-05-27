@@ -70,16 +70,16 @@
                 se performanse menjaca, unapredjuje se 
                 komfor i efikasnost u voznji, i mogu se
                 spreciti <span>ozbiljni i veoma skupi kvarovi.</span>
+            </p>
+            <div class="text-grid">
+                <p>
+                Zamena ulja i filtera u automatskom 
+                menjacu se preporucuje svakih 
+                40.000 km ili svake 3 godine. <br>
+                Usluge vrsimo svih vrsta automatskih menjača američkih, japanskih i evropskih proizvođača. 
                 </p>
-                <div class="text-grid">
-                    <p>
-                    Zamena ulja i filtera u automatskom 
-                    menjacu se preporucuje svakih 
-                    40.000 km ili svake 3 godine. <br>
-                    Usluge vrsimo svih vrsta automatskih menjača američkih, japanskih i evropskih proizvođača. 
-                    </p>
-                    <img src="img/car-mechanic.png" alt="">
-                </div>
+                <img src="img/car-mechanic.png" alt="">
+            </div>
         </div>
     </div>
     <!-- description-end -->
@@ -103,26 +103,25 @@
                 <div class="img-box">
                     <h1>BMW 750i V8 4.4 2010 god.</h1>
                     <p>ZF6HP28 6 brzina<br>Remont automstskog menjača</p>
-                    <img src="img/bmw-1.jpg">
+                    <img onclick="bmwModal1()" src="img/bmw-1.jpg">
                     <div class="img-grid">
-                        <img style="padding-right: .2em" src="img/bmw-2.jpg" alt="one">
-                        <img style="padding-left: .2em"src="img/bmw-3.jpg" alt="two">
+                        <img onclick="bmwModal2()" style="padding-right: .2em" src="img/bmw-2.jpg" alt="one">
+                        <img onclick="bmwModal3()" style="padding-left: .2em"src="img/bmw-3.jpg" alt="two">
                     </div>  
                 </div>
                 <div class="img-box">
                     <h1>Land Rover Freelander 2 2008 god.</h1>
                     <p>TF-81SC 6 brzina<br>Zamena hidrobloka</p>
-                    <img src="img/landrover-1.jpg">
+                    <img onclick="landroverModal1()" src="img/landrover-1.jpg">
                     <div class="img-grid">
-                        <img style="padding-right: .2em" src="img/landrover-2.jpg" alt="one">
-                        <img style="padding-left: .2em"src="img/landrover-3.jpg" alt="two">
+                        <img onclick="landroverModal2()" style="padding-right: .2em" src="img/landrover-2.jpg" alt="one">
+                        <img onclick="landroverModal3()" style="padding-left: .2em"src="img/landrover-3.jpg" alt="two">
                     </div> 
                 </div>
             </div>
             <p>Ostale radove mozete pogledati na nasoj <span><a href="#">Facebook</a></span> stranici.</p>
         </div>
     </div>
-    
     <!-- gallery-end -->
     <div class="description">
         <div class="txt-wrapper">
@@ -163,29 +162,69 @@
             <iframe frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Temerin%2CPap%20Pavla%20143&key=AIzaSyBtXth2wewXNhHijxyhMH3PGV9LMaNyfpw" allowfullscreen></iframe>
         </div>    
     </div>
-
     <!-- audi modals -->
-    <div id="audi-1-modal" class="modal">
-        <div class="modal-content">
-            <img src="img/audi-1.jpg">
-            <i onclick="closeAudi1()"class="fas fa-times"></i>
+    <div>
+        <div id="audi-1-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/audi-1.jpg">
+                <i onclick="closeAudi1()"class="fas fa-times"></i>
+            </div>
         </div>
-    </div>
-    <div id="audi-2-modal" class="modal">
-        <div class="modal-content">
-            <img src="img/audi-2.jpg"> 
-            <i onclick="closeAudi2()"class="fas fa-times"></i>
+        <div id="audi-2-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/audi-2.jpg"> 
+                <i onclick="closeAudi2()"class="fas fa-times"></i>
+            </div>
         </div>
-    </div>
-    <div id="audi-3-modal" class="modal">
+        <div id="audi-3-modal" class="modal">
             <div class="modal-content">
                 <img src="img/audi-3.jpg"> 
                 <i onclick="closeAudi3()"class="fas fa-times"></i>
             </div>
         </div>
-
-
-    
+    </div>
+    <!-- bmw modals -->
+    <div>
+        <div id="bmw-1-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/bmw-1.jpg">
+                <i onclick="closeBmw1()"class="fas fa-times"></i>
+            </div>
+        </div>
+        <div id="bmw-2-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/bmw-2.jpg"> 
+                <i onclick="closeBmw2()"class="fas fa-times"></i>
+            </div>
+        </div>
+        <div id="bmw-3-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/bmw-3.jpg"> 
+                <i onclick="closeBmw3()"class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <!--landrover modals -->
+    <div>
+        <div id="landrover-1-modal" class="modal">
+            <div class="modal-content">
+                <img src="img/landrover-1.jpg">
+                <i onclick="closeLR1()"class="fas fa-times"></i>
+            </div>
+            </div>
+            <div id="landrover-2-modal" class="modal">
+                <div class="modal-content">
+                    <img src="img/landrover-2.jpg"> 
+                    <i onclick="closeLR2()"class="fas fa-times"></i>
+                </div>
+            </div>
+            <div id="landrover-3-modal" class="modal">
+                <div class="modal-content">
+                    <img src="img/landrover-3.jpg"> 
+                    <i onclick="closeLR3()"class="fas fa-times"></i>
+                </div>
+            </div>
+    </div>
     <script>
         // auid-modals
             function audiModal1(){
@@ -194,17 +233,61 @@
             function closeAudi1(){
                 document.getElementById("audi-1-modal").style = "display: none;"
             }
+            //
             function audiModal2(){
                 document.getElementById("audi-2-modal").style = "display: block;"
             }
             function closeAudi2(){
                 document.getElementById("audi-2-modal").style = "display: none;"
             }
+            //
             function audiModal3(){
                 document.getElementById("audi-3-modal").style = "display: block;"
             }
             function closeAudi3(){
                 document.getElementById("audi-3-modal").style = "display: none;"
+            }
+        // bmw-modals
+            function bmwModal1(){
+                document.getElementById("bmw-1-modal").style = "display: block;"
+            }
+            function closeBmw1(){
+                document.getElementById("bmw-1-modal").style = "display: none;"
+            }
+            //
+            function bmwModal2(){
+                document.getElementById("bmw-2-modal").style = "display: block;"
+            }
+            function closeBmw2(){
+                document.getElementById("bmw-2-modal").style = "display: none;"
+            }
+            //
+            function bmwModal3(){
+                document.getElementById("bmw-3-modal").style = "display: block;"
+            }
+            function closeBmw3(){
+                document.getElementById("bmw-3-modal").style = "display: none;"
+            }
+        // bmw-modals
+             function landroverModal1(){
+                document.getElementById("landrover-1-modal").style = "display: block;"
+            }
+            function closeLR1(){
+                document.getElementById("landrover-1-modal").style = "display: none;"
+            }
+            //
+            function landroverModal2(){
+                document.getElementById("landrover-2-modal").style = "display: block;"
+            }
+            function closeLR2(){
+                document.getElementById("landrover-2-modal").style = "display: none;"
+            }
+            //
+            function landroverModal3(){
+                document.getElementById("landrover-3-modal").style = "display: block;"
+            }
+            function closeLR3(){
+                document.getElementById("landrover-3-modal").style = "display: none;"
             }
     </script>
 </body>
