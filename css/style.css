@@ -1,7 +1,3 @@
-body {
-  background: #FBFBFB;
-}
-
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
   background-repeat: no-repeat;
@@ -55,7 +51,7 @@ body {
 
 .section-b h2 {
   color: orange;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 2;
   letter-spacing: 6px;
   padding-left: .1em;
@@ -63,13 +59,13 @@ body {
 
 @media screen and (max-width: 306px) {
   .section-b h2 {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (min-width: 375px) {
   .section-b h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -161,7 +157,6 @@ body {
 }
 
 .content .box h1 {
-  font-family: 'Black Han Sans', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   padding-bottom: 1em;
@@ -169,7 +164,6 @@ body {
 }
 
 .content .box p {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   width: 75%;
@@ -225,14 +219,12 @@ body {
 }
 
 .description .txt-wrapper h1 {
-  font-family: 'Black Han Sans', sans-serif;
   font-size: 2rem;
   padding-bottom: 1em;
   color: #D4902A;
 }
 
 .description .txt-wrapper h3 {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #77674F;
@@ -242,7 +234,6 @@ body {
 .description .txt-wrapper p {
   width: 95%;
   padding: 1em 0;
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -277,7 +268,6 @@ body {
 }
 
 .gallery .img-wrap h1 {
-  font-family: 'Black Han Sans', sans-serif;
   font-size: 2rem;
   padding-bottom: 0.5em;
   color: #D4902A;
@@ -285,7 +275,6 @@ body {
 
 .gallery .img-wrap p {
   width: 95%;
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -297,7 +286,6 @@ body {
 }
 
 .gallery .img-wrap .img-box h1 {
-  font-family: 'Black Han Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #D4902A;
@@ -309,7 +297,6 @@ body {
 }
 
 .gallery .img-wrap .img-box p {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -384,16 +371,15 @@ body {
   background: #2e75e8;
   text-align: left;
   color: lightgrey;
-  font-family: 'Work Sans', sans-serif;
 }
 
 .info .gmaps {
   text-align: center;
 }
 
-.info .gmaps iframe {
-  width: 100%;
-  height: 300px;
+.info .gmaps img {
+  width: 150%;
+  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -409,7 +395,6 @@ body {
 }
 
 .info h1 {
-  font-family: 'Black Han Sans', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
 }
@@ -434,12 +419,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
+h1 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 body {
+  font-family: 'Work Sans', sans-serif;
   line-height: 1;
 }
 
