@@ -1,5 +1,6 @@
 $text-color: #ffffff;
 $transparent: #D1C9F2;
+$decor-font: 'Patua One', cursive;
 $glass: 0.3;
 
 body{
@@ -147,7 +148,6 @@ body{
         @media screen and (min-width: 1000px){
             background: #333;
             color: lightgrey;
-            
         }
         i {
             font-size: 3rem;
@@ -158,14 +158,14 @@ body{
             }
         }
         h1 {
-            font-family: 'Black Han Sans', sans-serif;
-            font-size: 1.4rem;
+            font-family: $decor-font;
+            font-size: 1.6rem;
             text-transform: uppercase;
             padding-bottom: 1em;
             color: #D4902A;
         }
         p {
-            font-family: 'Work Sans', sans-serif;
+            letter-spacing: 1px;
             font-size: 1rem;
             font-weight: lighter;
             width: 75%;
@@ -189,7 +189,7 @@ body{
         display: grid;
         grid-template-columns: 75% 25%;
         margin: 0 -100rem;
-        padding: 2em 100rem;
+        padding: 4em 100rem;
         box-shadow: 0px 18px 15px -19px rgba(0,0,0,0.75);
         
         #ciko img{
@@ -234,13 +234,13 @@ body{
             width: 100%;
         }
         h1 {
-            font-family: 'Black Han Sans', sans-serif;
+            text-transform: uppercase;
+            font-family: $decor-font;
             font-size: 2rem;
             padding-bottom: 1em;
             color: #D4902A;
         }
         h3{
-            font-family: 'Work Sans', sans-serif;
             font-size: 1.3rem;
             font-weight: bold;
             color: #77674F;
@@ -249,7 +249,6 @@ body{
         p{
             width: 95%;
             padding: 1em 0;
-            font-family: 'Work Sans', sans-serif;
             font-size: 1rem;
             font-weight: lighter;
             color: #77674F;
@@ -270,6 +269,7 @@ body{
     }
 }
 .gallery {
+    padding: 2em 0;
     text-align: left;
     @media screen and (min-width: 1000px) {
         margin: 2em -100rem;
@@ -288,14 +288,14 @@ body{
             }
         
         h1 {
-            font-family: 'Black Han Sans', sans-serif;
+            text-transform: uppercase;
+            font-family: $decor-font;
             font-size: 2rem;
             padding-bottom: 0.5em;
             color: #D4902A;
         }
         p{
             width: 95%;
-            font-family: 'Work Sans', sans-serif;
             font-size: 1rem;
             font-weight: lighter;
             color: #77674F;
@@ -304,10 +304,10 @@ body{
              padding: 1em 0 1em 0;
              text-align: left;
              @media screen and (min-width: 1000px){
-                 padding: 1em .5em;
+                 padding: 1em .2em;
              }
              h1 {
-                font-family: 'Black Han Sans', sans-serif;
+                font-family: $decor-font;
                 font-size: 1rem;
                 font-weight: lighter;
                 color: #D4902A;
@@ -317,7 +317,6 @@ body{
                 width: 100%;
             }
             p{
-                font-family: 'Work Sans', sans-serif;
                 font-size: 1rem;
                 font-weight: lighter;
                 color: #77674F;
@@ -396,7 +395,7 @@ body{
     background:#2e75e8;
     text-align: left;
     color: lightgrey;
-    font-family: 'Work Sans', sans-serif;
+    font-family: $decor-font;
     h3{
         font-size: 1.1rem;
         padding-top: 2em;
@@ -424,7 +423,7 @@ body{
         }
     }
     h1 {
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: $decor-font;
         font-size: 2em;
         text-transform: uppercase;
     }
@@ -444,7 +443,53 @@ body{
         padding: 0;
         margin: 0;
         @media screen and (min-width: 1000px){
-            height: 300px;
+            height: 500px;
+        }
+    }
+}
+footer{
+    background: #333;
+    width: 100%;
+    height: 125px;
+    @media screen and (max-width: 600px){
+        height: auto;
+    }
+    .footer-wrap{
+        text-align: center;
+        width: 1000px;
+        margin: 0 auto;
+        @media screen and (max-width: 600px){
+            text-align: left;
+            width: 100%;
+        }
+        p{
+            color:#a4a6aa;
+            font-size: 0.9rem;
+            padding-top: 2.2em;
+            @media screen and (max-width: 600px){
+                text-align: center;
+                padding: 2.5em;
+            }
+        }
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 2em 3em 0 3em;
+            @media screen and (max-width: 600px){
+                display: block;
+                padding: 2em 3em 0 1.5em;
+            }
+            a{
+                color: #a4a6aa;
+                text-decoration: none;
+                font-size: 1.2rem;
+                @media screen and (max-width: 600px){
+                    font-size: 1.1rem;
+                }
+                &:hover{
+                    color: orange;
+                }
+            }
         }
     }
 }

@@ -207,15 +207,15 @@ body {
 }
 
 .content .box h1 {
-  font-family: 'Black Han Sans', sans-serif;
-  font-size: 1.4rem;
+  font-family: "Patua One", cursive;
+  font-size: 1.6rem;
   text-transform: uppercase;
   padding-bottom: 1em;
   color: #D4902A;
 }
 
 .content .box p {
-  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
   font-size: 1rem;
   font-weight: lighter;
   width: 75%;
@@ -245,7 +245,7 @@ body {
     display: grid;
     grid-template-columns: 75% 25%;
     margin: 0 -100rem;
-    padding: 2em 100rem;
+    padding: 4em 100rem;
     box-shadow: 0px 18px 15px -19px rgba(0, 0, 0, 0.75);
   }
   .description #ciko img {
@@ -315,14 +315,14 @@ body {
 }
 
 .description .txt-wrapper h1 {
-  font-family: 'Black Han Sans', sans-serif;
+  text-transform: uppercase;
+  font-family: "Patua One", cursive;
   font-size: 2rem;
   padding-bottom: 1em;
   color: #D4902A;
 }
 
 .description .txt-wrapper h3 {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #77674F;
@@ -332,7 +332,6 @@ body {
 .description .txt-wrapper p {
   width: 95%;
   padding: 1em 0;
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -356,6 +355,7 @@ body {
 }
 
 .gallery {
+  padding: 2em 0;
   text-align: left;
 }
 
@@ -383,7 +383,8 @@ body {
 }
 
 .gallery .img-wrap h1 {
-  font-family: 'Black Han Sans', sans-serif;
+  text-transform: uppercase;
+  font-family: "Patua One", cursive;
   font-size: 2rem;
   padding-bottom: 0.5em;
   color: #D4902A;
@@ -391,7 +392,6 @@ body {
 
 .gallery .img-wrap p {
   width: 95%;
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -404,12 +404,12 @@ body {
 
 @media screen and (min-width: 1000px) {
   .gallery .img-wrap .img-box {
-    padding: 1em .5em;
+    padding: 1em .2em;
   }
 }
 
 .gallery .img-wrap .img-box h1 {
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Patua One", cursive;
   font-size: 1rem;
   font-weight: lighter;
   color: #D4902A;
@@ -421,7 +421,6 @@ body {
 }
 
 .gallery .img-wrap .img-box p {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -508,7 +507,7 @@ body {
   background: #2e75e8;
   text-align: left;
   color: lightgrey;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Patua One", cursive;
 }
 
 .info h3 {
@@ -547,7 +546,7 @@ body {
 }
 
 .info h1 {
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Patua One", cursive;
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -572,8 +571,75 @@ body {
 
 @media screen and (min-width: 1000px) {
   .gmaps iframe {
-    height: 300px;
+    height: 500px;
   }
+}
+
+footer {
+  background: #333;
+  width: 100%;
+  height: 125px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: auto;
+  }
+}
+
+footer .footer-wrap {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer-wrap {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+footer .footer-wrap p {
+  color: #a4a6aa;
+  font-size: 0.9rem;
+  padding-top: 2.2em;
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer-wrap p {
+    text-align: center;
+    padding: 2.5em;
+  }
+}
+
+footer .footer-wrap li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2em 3em 0 3em;
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer-wrap li {
+    display: block;
+    padding: 2em 3em 0 1.5em;
+  }
+}
+
+footer .footer-wrap li a {
+  color: #a4a6aa;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer-wrap li a {
+    font-size: 1.1rem;
+  }
+}
+
+footer .footer-wrap li a:hover {
+  color: orange;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -586,6 +652,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: 'Work Sans', sans-serif;
   vertical-align: baseline;
 }
 
