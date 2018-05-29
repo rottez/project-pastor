@@ -1,3 +1,20 @@
+body {
+  background: #FBFBFB;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: #edf0f3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
   background-repeat: no-repeat;
@@ -51,7 +68,7 @@
 
 .section-b h2 {
   color: orange;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 6px;
   padding-left: .1em;
@@ -59,13 +76,13 @@
 
 @media screen and (max-width: 306px) {
   .section-b h2 {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 375px) {
   .section-b h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -144,10 +161,22 @@
   line-height: 1.2;
 }
 
+@media screen and (min-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .content .box {
   background: #FBFBFB;
   width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .content .box {
+    background: #edf0f3;
+  }
 }
 
 .content .box i {
@@ -157,6 +186,7 @@
 }
 
 .content .box h1 {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   padding-bottom: 1em;
@@ -164,6 +194,7 @@
 }
 
 .content .box p {
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   width: 75%;
@@ -172,14 +203,42 @@
   color: #77674F;
 }
 
+@media screen and (min-width: 1000px) {
+  .content .box p {
+    text-align: left;
+  }
+}
+
 .description {
   padding: 4em 0 2em 0;
   background: #edf0f3;
 }
 
+.description #ciko img {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .description {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+  .description #ciko img {
+    display: block;
+    width: 100%;
+    padding-top: 3em;
+  }
+}
+
 .description .text-grid {
   display: grid;
   grid-template-columns: 70% 30%;
+}
+
+@media screen and (min-width: 1000px) {
+  .description .text-grid {
+    grid-template-columns: 100%;
+  }
 }
 
 .description .text-grid img {
@@ -212,19 +271,33 @@
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .description .text-grid img {
+    display: none;
+  }
+}
+
 .description .txt-wrapper {
   width: 85%;
   margin: 0 auto;
   line-height: 1.2;
 }
 
+@media screen and (min-width: 1000px) {
+  .description .txt-wrapper {
+    width: 100%;
+  }
+}
+
 .description .txt-wrapper h1 {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 2rem;
   padding-bottom: 1em;
   color: #D4902A;
 }
 
 .description .txt-wrapper h3 {
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #77674F;
@@ -234,9 +307,16 @@
 .description .txt-wrapper p {
   width: 95%;
   padding: 1em 0;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
+}
+
+@media screen and (min-width: 1000px) {
+  .description .txt-wrapper p {
+    width: 70%;
+  }
 }
 
 .description .txt-wrapper span {
@@ -261,6 +341,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .gallery .img-wrap {
+    width: 100%;
+  }
   .gallery .img-wrap .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -268,6 +351,7 @@
 }
 
 .gallery .img-wrap h1 {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 2rem;
   padding-bottom: 0.5em;
   color: #D4902A;
@@ -275,6 +359,7 @@
 
 .gallery .img-wrap p {
   width: 95%;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -285,7 +370,14 @@
   text-align: left;
 }
 
+@media screen and (min-width: 1000px) {
+  .gallery .img-wrap .img-box {
+    padding: 1em .5em;
+  }
+}
+
 .gallery .img-wrap .img-box h1 {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #D4902A;
@@ -297,6 +389,7 @@
 }
 
 .gallery .img-wrap .img-box p {
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   color: #77674F;
@@ -360,6 +453,12 @@
   border: 2px solid white;
 }
 
+@media screen and (min-width: 1000px) {
+  .modal .modal-content img {
+    width: 50%;
+  }
+}
+
 .modal .modal-content i {
   padding: .5em 0;
   color: white;
@@ -371,15 +470,16 @@
   background: #2e75e8;
   text-align: left;
   color: lightgrey;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .info .gmaps {
   text-align: center;
 }
 
-.info .gmaps img {
-  width: 150%;
-  height: auto;
+.info .gmaps iframe {
+  width: 100%;
+  height: 300px;
   padding: 0;
   margin: 0;
 }
@@ -395,6 +495,7 @@
 }
 
 .info h1 {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
 }
@@ -419,17 +520,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-h1 {
-  font-family: 'Black Han Sans', sans-serif;
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
   line-height: 1;
 }
 

@@ -10,6 +10,7 @@
     <title>ATS Pastor</title>
 </head>
 <body>
+  <div class="wrapper">
     <div class="bg-img">
         <div class="section-a">
             <h1 class="ontop">specijalizovan servis</h1>
@@ -32,8 +33,7 @@
             <i class="fas fa-wrench"></i>
             <h1>usluge</h1>
             <p>Popravak,remont i servis
-                svih vrsta američkih, japanskih i 
-                evropskih proizvođača automatskih menjača, CVT-Multitronic
+                svih vrsta automatskih menjača, CVT-Multitronic
                 menjaca i hidrodinamickih
                 spojnica.</p>
         </div>
@@ -57,30 +57,36 @@
     </div>
     <!-- content-end -->
     <div class="description">
-        <div class="txt-wrapper">
-            <h1>Servis Automatskih Menjaca</h1>
-            <h3>
-                Zamena ulja automatskog menjaca
-                spada u redovne periodicne servisne
-                intervencije i neophodno je odraditi
-                u predvidjenom intervalu
-            </h3>
-        
-            <p>Preventivom zamenom ulja poboljsavaju
-                se performanse menjaca, unapredjuje se 
-                komfor i efikasnost u voznji, i mogu se
-                spreciti <span>ozbiljni i veoma skupi kvarovi.</span>
-            </p>
-            <div class="text-grid">
-                <p>
-                Zamena ulja i filtera u automatskom 
-                menjacu se preporucuje svakih 
-                40.000 km ili svake 3 godine. <br>
-                Usluge vrsimo svih vrsta automatskih menjača američkih, japanskih i evropskih proizvođača. 
+        <div>
+            <div class="txt-wrapper">
+                <h1>Servis Automatskih Menjaca</h1>
+                <h3>
+                    Zamena ulja automatskog menjaca
+                    spada u redovne periodicne servisne
+                    intervencije i neophodno je odraditi
+                    u predvidjenom intervalu
+                </h3>
+            
+                <p>Preventivom zamenom ulja poboljsavaju
+                    se performanse menjaca, unapredjuje se 
+                    komfor i efikasnost u voznji, i mogu se
+                    spreciti <span>ozbiljni i veoma skupi kvarovi.</span>
                 </p>
-                <img src="img/car-mechanic.png" alt="">
+                <div class="text-grid">
+                    <p>
+                    Zamena ulja i filtera u automatskom 
+                    menjacu se preporucuje svakih 
+                    40.000 km ili svake 3 godine. <br>
+                    Usluge vrsimo svih vrsta automatskih menjača američkih, japanskih i evropskih proizvođača. 
+                    </p>
+                    <img src="img/car-mechanic.png" alt="">
+                </div>
             </div>
         </div>
+        <div id="ciko">
+            <img src="img/car-mechanic.png" alt=""> 
+        </div>
+        
     </div>
     <!-- description-end -->
     <div class="gallery">
@@ -159,26 +165,29 @@
             </p>            
         </div>
         <div class="gmaps">
-            
-        </div>    
+            <iframe frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Temerin%2CPap%20Pavla%20143&key=AIzaSyBtXth2wewXNhHijxyhMH3PGV9LMaNyfpw" allowfullscreen></iframe>
+        </div>     
     </div>
     <!-- audi modals -->
     <div>
         <div id="audi-1-modal" class="modal">
             <div class="modal-content">
                 <img src="img/audi-1.jpg">
+                <br>
                 <i onclick="closeAudi1()"class="fas fa-times"></i>
             </div>
         </div>
         <div id="audi-2-modal" class="modal">
             <div class="modal-content">
                 <img src="img/audi-2.jpg"> 
+                <br>
                 <i onclick="closeAudi2()"class="fas fa-times"></i>
             </div>
         </div>
         <div id="audi-3-modal" class="modal">
             <div class="modal-content">
-                <img src="img/audi-3.jpg"> 
+                <img src="img/audi-3.jpg">
+                <br> 
                 <i onclick="closeAudi3()"class="fas fa-times"></i>
             </div>
         </div>
@@ -188,18 +197,21 @@
         <div id="bmw-1-modal" class="modal">
             <div class="modal-content">
                 <img src="img/bmw-1.jpg">
+                <br>
                 <i onclick="closeBmw1()"class="fas fa-times"></i>
             </div>
         </div>
         <div id="bmw-2-modal" class="modal">
             <div class="modal-content">
-                <img src="img/bmw-2.jpg"> 
+                <img src="img/bmw-2.jpg">
+                <br> 
                 <i onclick="closeBmw2()"class="fas fa-times"></i>
             </div>
         </div>
         <div id="bmw-3-modal" class="modal">
             <div class="modal-content">
-                <img src="img/bmw-3.jpg"> 
+                <img src="img/bmw-3.jpg">
+                <br> 
                 <i onclick="closeBmw3()"class="fas fa-times"></i>
             </div>
         </div>
@@ -209,22 +221,26 @@
         <div id="landrover-1-modal" class="modal">
             <div class="modal-content">
                 <img src="img/landrover-1.jpg">
+                <br>
                 <i onclick="closeLR1()"class="fas fa-times"></i>
+            </div>
             </div>
             <div id="landrover-2-modal" class="modal">
                 <div class="modal-content">
-                    <img src="img/landrover-2.jpg"> 
+                    <img src="img/landrover-2.jpg">
+                    <br> 
                     <i onclick="closeLR2()"class="fas fa-times"></i>
                 </div>
             </div>
             <div id="landrover-3-modal" class="modal">
                 <div class="modal-content">
                     <img src="img/landrover-3.jpg"> 
+                    <br>
                     <i onclick="closeLR3()"class="fas fa-times"></i>
                 </div>
             </div>
-        </div>
     </div>
+  </div>
     <script>
         // auid-modals
             function audiModal1(){
