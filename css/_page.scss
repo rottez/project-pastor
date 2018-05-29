@@ -1,10 +1,12 @@
 $text-color: #ffffff;
 $transparent: #D1C9F2;
 $glass: 0.3;
+
 body{
     background:#FBFBFB;
+    overflow-x: hidden;
     @media screen and (min-width: 1000px){
-        background:rgb(237, 240, 243);;
+        background:rgb(237, 240, 243);
     }
 }
 .wrapper{
@@ -28,6 +30,9 @@ body{
     }
     @media screen and (min-width: 400px){
         height: 670px;
+    }
+    @media screen and (min-width: 1000px){
+        background:rgb(237, 240, 243);
     }
 }
 .section-a{
@@ -118,27 +123,39 @@ body{
     }
 }
 // kontakt-end
+    @media screen and (min-width: 1000px){
+        .content-wrapper{
+            background: #333;
+            margin: 0 -100rem;
+            padding: 4rem 100rem;
+        }
+    }
 .content {
-    margin: 3em 0;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr; 
     letter-spacing: 1.2px;
     line-height: 1.2;
     @media screen and (min-width: 1000px){
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
     .box {
-        background:#FBFBFB;
+        background:white;
         width: 100%;
         margin: 0 auto;
         @media screen and (min-width: 1000px){
-            background:rgb(237, 240, 243);
+            background: #333;
+            color: lightgrey;
+            
         }
         i {
             font-size: 3rem;
             color: grey;
             padding: .7em 0;
+            @media screen and (min-width: 1000px){
+                color: orange;
+            }
         }
         h1 {
             font-family: 'Black Han Sans', sans-serif;
@@ -157,19 +174,24 @@ body{
             color: #77674F;
             @media screen and (min-width: 1000px){
                 text-align :left;
+                color: lightgrey;
             }
         }
     }
 }
 .description {
-    padding: 4em 0 2em 0;
     background:rgb(237, 240, 243);
+    padding: 4em 0;
     #ciko img{
         display: none;
     }
     @media screen and (min-width: 1000px) {
         display: grid;
         grid-template-columns: 75% 25%;
+        margin: 0 -100rem;
+        padding: 2em 100rem;
+        box-shadow: 0px 18px 15px -19px rgba(0,0,0,0.75);
+        
         #ciko img{
             display: block;
             width: 100%;
@@ -249,7 +271,11 @@ body{
 }
 .gallery {
     text-align: left;
-    padding: 4em 0;
+    margin: 2em -100rem;
+    padding: 3em 100rem;
+    @media screen and (min-width: 1000px) {
+        box-shadow: 0px 18px 15px -19px rgba(0,0,0,0.75);
+    }
     .img-wrap {
         width: 85%;
         margin: 0 auto;
@@ -333,13 +359,16 @@ body{
         // -webkit-animation-name: smallToBig;
         // -webkit-animation-duration: 0.5s;
         animation-name: OPACITY;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         padding-top: 11em;
         margin: 0 auto;
         width: 95%;
         @keyframes OPACITY{
             from { opacity: 0.1}
             to { opacity: 1}
+        }
+        @media screen and (min-width: 1000px){
+            padding-top: 5em;
         }
         // @-webkit-keyframes smallToBig{
         //     from { width: 30%;}
@@ -368,11 +397,17 @@ body{
     text-align: left;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
-    .gmaps {
-        text-align: center;
-        iframe{
-            width: 100%;
-            height: 300px;
+    h3{
+        font-size: 1.1rem;
+        padding-top: 2em;
+    }
+    @media screen and (min-width: 1000px){
+        background: #333;
+        margin: 0 -100rem;
+        padding: 4rem 100rem 0rem 100rem;
+        color: orange;
+        p {
+            color: lightgrey;
             padding: 0;
             margin: 0;
         }
@@ -384,10 +419,13 @@ body{
     .txt-wrap {
         width: 85%;
         margin: 0 auto;
+        @media screen and (min-width: 1000px){
+            width: 100%;
+        }
     }
     h1 {
         font-family: 'Black Han Sans', sans-serif;
-        font-size: 1.4rem;
+        font-size: 2em;
         text-transform: uppercase;
     }
     p {
@@ -397,4 +435,16 @@ body{
         line-height: 1.2;
     }
 
+}
+.gmaps {
+    text-align: center;
+    iframe{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        @media screen and (min-width: 1000px){
+            height: 300px;
+        }
+    }
 }
