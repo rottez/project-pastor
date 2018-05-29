@@ -132,6 +132,7 @@ body{
         }
     }
 .content {
+    
     text-align: center;
     display: grid;
     grid-template-columns: 1fr; 
@@ -142,7 +143,7 @@ body{
         
     }
     .box {
-        background:white;
+        background: #333;
         width: 100%;
         margin: 0 auto;
         @media screen and (min-width: 1000px){
@@ -151,7 +152,7 @@ body{
         }
         i {
             font-size: 3rem;
-            color: grey;
+            color: #D4902A;
             padding: .7em 0;
             @media screen and (min-width: 1000px){
                 color: #D4902A;
@@ -171,10 +172,11 @@ body{
             width: 75%;
             margin: 0 auto;
             padding-bottom: 1.5em;
-            color: #77674F;
+            color: #eee;
             @media screen and (min-width: 1000px){
                 text-align :left;
                 color: lightgrey;
+                padding-left: 3em;
             }
         }
     }
@@ -205,17 +207,17 @@ body{
             grid-template-columns: 100%;
         }
         img { 
-            padding-top: 5em;
+            padding-top: 7em;
             width: 100%;
             height: auto;
             @media screen and (min-width: 323px){
-                padding-top: 3.5em;
+                padding-top: 5em;
             }
             @media screen and (min-width: 350px){
-                padding-top: 3em;
+                padding-top: 5em;
             }
             @media screen and (min-width: 370px){
-                padding-top: 2em;
+                padding-top: 4em;
             }
             @media screen and (min-width: 369px){
                 padding-top: 1.5em;
@@ -269,6 +271,7 @@ body{
     }
 }
 .gallery {
+    background:rgb(237, 240, 243);
     padding: 2em 0;
     text-align: left;
     @media screen and (min-width: 1000px) {
@@ -391,11 +394,12 @@ body{
 }
 .info {
     padding-top: 2em;
-    background:#2e75e8;
+    background:#333;
     text-align: left;
     color: lightgrey;
     font-family: $decor-font;
     h3{
+        color:#D4902A;
         font-size: 1.1rem;
         padding-top: 2em;
     }
@@ -422,6 +426,7 @@ body{
         }
     }
     h1 {
+        color: #D4902A;
         font-family: $decor-font;
         font-size: 2em;
         text-transform: uppercase;
