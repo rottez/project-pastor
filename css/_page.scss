@@ -64,7 +64,7 @@ body{
     }
     //
     h2{
-        color: orange;
+        color: #D4902A;
         font-size: 1.3rem;
         line-height: 2;
         letter-spacing: 6px;
@@ -80,7 +80,7 @@ body{
         color: $text-color;
     }
     .bg-transparent-2{
-        background: orange;
+        background: #D4902A;
         opacity: $glass;
         height: 15em;
         width: 6%;
@@ -154,7 +154,7 @@ body{
             color: grey;
             padding: .7em 0;
             @media screen and (min-width: 1000px){
-                color: orange;
+                color: #D4902A;
             }
         }
         h1 {
@@ -310,7 +310,6 @@ body{
                 font-family: $decor-font;
                 font-size: 1rem;
                 font-weight: lighter;
-                color: #D4902A;
                 padding: 0;
              }
              img {
@@ -404,7 +403,7 @@ body{
         background: #333;
         margin: 0 -100rem;
         padding: 4rem 100rem 0rem 100rem;
-        color: orange;
+        color: #D4902A;
         p {
             color: lightgrey;
             padding: 0;
@@ -487,7 +486,7 @@ footer{
                     font-size: 1.1rem;
                 }
                 &:hover{
-                    color: orange;
+                    color: #D4902A;
                 }
             }
         }

@@ -74,7 +74,7 @@ body {
 }
 
 .section-b h2 {
-  color: orange;
+  color: #D4902A;
   font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 6px;
@@ -98,7 +98,7 @@ body {
 }
 
 .section-b .bg-transparent-2 {
-  background: orange;
+  background: #D4902A;
   opacity: 0.3;
   height: 15em;
   width: 6%;
@@ -202,7 +202,7 @@ body {
 
 @media screen and (min-width: 1000px) {
   .content .box i {
-    color: orange;
+    color: #D4902A;
   }
 }
 
@@ -412,7 +412,6 @@ body {
   font-family: "Patua One", cursive;
   font-size: 1rem;
   font-weight: lighter;
-  color: #D4902A;
   padding: 0;
 }
 
@@ -520,7 +519,7 @@ body {
     background: #333;
     margin: 0 -100rem;
     padding: 4rem 100rem 0rem 100rem;
-    color: orange;
+    color: #D4902A;
   }
   .info p {
     color: lightgrey;
@@ -639,7 +638,7 @@ footer .footer-wrap li a {
 }
 
 footer .footer-wrap li a:hover {
-  color: orange;
+  color: #D4902A;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
