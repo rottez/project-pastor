@@ -589,8 +589,7 @@ body {
 }
 
 .info i {
-  padding: .2em 0;
-  padding-right: .5em;
+  padding: .5em;
 }
 
 .info .txt-wrap {
@@ -674,9 +673,14 @@ footer .footer-wrap p {
 }
 
 footer .footer-wrap li {
+  color: white;
   list-style-type: none;
   display: inline-block;
   padding: 2em 3em 0 3em;
+}
+
+footer .footer-wrap li:hover {
+  color: #D4902A;
 }
 
 @media screen and (max-width: 600px) {
@@ -687,7 +691,6 @@ footer .footer-wrap li {
 }
 
 footer .footer-wrap li a {
-  color: #a4a6aa;
   text-decoration: none;
   font-size: 1.2rem;
 }

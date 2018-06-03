@@ -166,16 +166,16 @@
     <div class="info">
         <div class="txt-wrap">
             <h1>kontakt</h1>
-            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptate.</h3>
+            <h3>Ukoliko image bilo kakvih pitanja kontaktirajte nas!</h3>
             <p><i class="fas fa-user"></i>Pastor Davd
                 <br>
                 <i class="fas fa-phone"></i>063/513-235
                 <br>
-                <i class="fas fa-map-marker-alt"></i>Pap Pavla 143, Temerin
+                <i class="fas fa-map-marker-alt"></i> Pap Pavla 143, Temerin
                 <br>
                 <i class="fas fa-envelope"></i>servispastor@yahoo.com
                 <br>
-                <i class="fas fa-clock"></i></i>Open hours: 08-17h
+                <i class="fas fa-clock"></i>Open hours: 08-17h
             </p>            
         </div>    
     </div>
@@ -257,10 +257,10 @@
   </div>
   <footer>
       <div class="footer-wrap">
-          <li><a href="">HOME</a></li>
-          <li><a href="">SERVIS</a></li>
-          <li><a href="">GALERIJA</a></li>
-          <li><a href="">KONTAKT</a></li>
+          <li id="footer-home"><a href="#">HOME</a></li>
+          <li id="footer-servis"><a href="#">SERVIS</a></li>
+          <li id="footer-galerija"><a href="#">GALERIJA</a></li>
+          <li id="footer-kontakt"><a href="#">KONTAKT</a></li>
           <li><a href="https://www.facebook.com/servispastor/" target="_blank">FACEBOOK</a></li>
           <p>© ATS Pastor 2018. All rights reserved.</p>
       </div>
@@ -371,6 +371,7 @@
                 $('.nav-active').hide();
                 $('#toggleOn').show();
             });
+            //nav
             $("#nav-home").click(function() {
                 $('html, body').animate({
                     scrollTop: $('.bg-img').offset().top
@@ -399,8 +400,27 @@
                 $('.nav-active').hide();
                 $('#toggleOn').show();
             });
-            
-            
+            //footer
+            $("#footer-home").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.bg-img').offset().top
+                }, 500);
+            });
+            $("#footer-servis").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.description').offset().top
+                }, 500);
+            });
+            $("#footer-galerija").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.gallery').offset().top
+                }, 500);
+            });   
+            $("#footer-kontakt").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.info').offset().top
+                }, 500);
+            }); 
     </script>
 </body>
 </html>
