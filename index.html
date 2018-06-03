@@ -15,10 +15,10 @@
             <i id="toggleOn" class="fas fa-bars"></i>
             <div class="nav-active">
                 <i id="toggleOff" class="far fa-window-close"></i>
-                <li><a href="">home</a></li>
-                <li><a href="">servis</a></li>
-                <li><a href="">galerija</a></li>
-                <li><a href="">kontakt</a></li>
+                <li id="nav-home">home</li>
+                <li id="nav-servis">servis</li>
+                <li id="nav-galerija">galerija</li>
+                <li id="nav-kontakt">kontakt</li>
             </div>
         </navbar>
   <div class="wrapper">
@@ -371,6 +371,36 @@
                 $('.nav-active').hide();
                 $('#toggleOn').show();
             });
+            $("#nav-home").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.bg-img').offset().top
+                }, 500);
+                $('.nav-active').hide();
+                $('#toggleOn').show();
+            });
+            $("#nav-servis").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.description').offset().top
+                }, 500);
+                $('.nav-active').hide();
+                $('#toggleOn').show();
+            });
+            $("#nav-galerija").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.gallery').offset().top
+                }, 500);
+                $('.nav-active').hide();
+                $('#toggleOn').show();
+            });
+            $("#nav-kontakt").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.info').offset().top
+                }, 500);
+                $('.nav-active').hide();
+                $('#toggleOn').show();
+            });
+            
+            
     </script>
 </body>
 </html>
