@@ -11,8 +11,19 @@
     <title>ATS Pastor</title>
 </head>
 <body>
+        <navbar class="nav-down">
+            <i id="toggleOn" class="fas fa-bars"></i>
+            <div class="nav-active">
+                <i id="toggleOff" class="far fa-window-close"></i>
+                <li><a href="">home</a></li>
+                <li><a href="">servis</a></li>
+                <li><a href="">galerija</a></li>
+                <li><a href="">kontakt</a></li>
+            </div>
+        </navbar>
   <div class="wrapper">
     <div class="bg-img">
+        
         <div class="section-a">
             <h1 class="ontop">specijalizovan servis</h1>
             <div class="bg-transparent"></div>
@@ -253,7 +264,13 @@
           <li><a href="https://www.facebook.com/servispastor/" target="_blank">FACEBOOK</a></li>
           <p>© ATS Pastor 2018. All rights reserved.</p>
       </div>
-  </footer> 
+  </footer>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script> 
+
     <script>
         // auid-modals
             function audiModal1(){
@@ -318,6 +335,42 @@
             function closeLR3(){
                 document.getElementById("landrover-3-modal").style = "display: none;"
             }
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('navbar').outerHeight();
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('navbar').removeClass('nav-down').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                        $('navbar').removeClass('nav-up').addClass('nav-down');
+                    }
+                }
+            lastScrollTop = st;
+            }
+            $('#toggleOn').click(function(){
+               $('.nav-active').show();
+               $('#toggleOn').hide(); 
+            });
+            $('#toggleOff').click(function(){
+                $('.nav-active').hide();
+                $('#toggleOn').show();
+            });
     </script>
 </body>
 </html>
