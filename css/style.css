@@ -16,28 +16,96 @@ body {
   }
 }
 
-.bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 580px;
+.navbar {
+  color: lightgrey;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: black;
 }
 
-@media screen and (min-width: 375px) {
-  .bg-img {
-    height: 620px;
+.nav-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar-left {
+  float: left;
+  padding: 1em 0;
+}
+
+.navbar-left i {
+  color: orange;
+}
+
+.navbar-left li {
+  display: inline;
+  padding: 0 2em;
+  font-size: 0.9rem;
+}
+
+.navbar-right {
+  float: right;
+  padding: 1em 0;
+}
+
+.navbar-right li {
+  text-transform: uppercase;
+  display: inline;
+  padding: 0 1em;
+}
+
+.navbar-right a {
+  color: lightgrey;
+}
+
+.navbar-right a:hover {
+  color: orange;
+}
+
+.nav {
+  background: black;
+  text-transform: uppercase;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  color: orange;
+  animation-name: OPACITY;
+  animation-duration: 0.1s;
+}
+
+@keyframes OPACITY {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 400px) {
-  .bg-img {
-    height: 670px;
-  }
+.nav i {
+  font-size: 2rem;
+  padding: .5em;
+}
+
+.nav li:last-child {
+  border-bottom: 0;
+}
+
+.nav li {
+  color: #edf0f3;
+  list-style-type: none;
+  padding: 1em .5em 1em 1em;
+  border-bottom: 1px solid orange;
+}
+
+.nav li a:hover {
+  color: orange;
 }
 
 @media screen and (min-width: 1000px) {
-  .bg-img {
-    background: #edf0f3;
+  .nav {
+    display: none;
   }
 }
 
@@ -58,49 +126,70 @@ body {
   }
 }
 
-.nav-down {
-  background: black;
-  text-transform: uppercase;
-  z-index: 1;
-  width: 100%;
-  position: fixed;
-  color: orange;
-  animation-name: OPACITY;
-  animation-duration: 0.3s;
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-img.jpg) -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
 }
 
-@keyframes OPACITY {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
+@media screen and (min-width: 375px) {
+  .bg-img {
+    height: 620px;
   }
 }
 
-.nav-down .nav-up {
-  padding: 0;
-  margin: 0;
+@media screen and (min-width: 400px) {
+  .bg-img {
+    height: 670px;
+  }
 }
 
-.nav-down i {
+@media screen and (min-width: 500px) {
+  .bg-img {
+    background: #edf0f3;
+    display: none;
+  }
+}
+
+.welcome-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/r8.jpg) 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  color: #eee;
+  text-align: center;
+}
+
+.welcome-img .welcome-a {
+  padding-top: 150px;
+}
+
+.welcome-img .welcome-a h1 {
+  color: lightgrey;
+  font-size: 5rem;
+  letter-spacing: 15px;
+  font-family: "Patua One", cursive;
+}
+
+.welcome-img .welcome-a h2 {
   font-size: 2rem;
-  padding: .5em;
-}
-
-.nav-down li:last-child {
-  border-bottom: 0;
-}
-
-.nav-down li {
-  color: #edf0f3;
-  list-style-type: none;
-  padding: 1em .5em 1em 1em;
-  border-bottom: 1px solid orange;
-}
-
-.nav-down li a:hover {
   color: orange;
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .welcome-img .welcome-a h2 {
+    padding-top: .5em;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .welcome-img {
+    background: #edf0f3;
+    display: none;
+  }
 }
 
 .section-a {
@@ -230,6 +319,7 @@ body {
 }
 
 .content {
+  background: #333;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -333,7 +423,7 @@ body {
   padding-top: 7em;
   width: 100%;
   height: auto;
-  box-shadow: 0px 18px 15px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 15px -19px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 323px) {
@@ -502,8 +592,9 @@ body {
 }
 
 .gallery .img-wrap span a {
+  text-transform: uppercase;
   text-decoration: none;
-  color: #77674F;
+  color: #3b5998;
 }
 
 .modal {
@@ -636,73 +727,58 @@ body {
 
 footer {
   background: #333;
-  width: 100%;
-  height: 125px;
-}
-
-@media screen and (max-width: 600px) {
-  footer {
-    height: auto;
-  }
+  color: darkgrey;
 }
 
 footer .footer-wrap {
-  text-align: center;
-  width: 1000px;
+  width: 90%;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
-  footer .footer-wrap {
-    text-align: left;
-    width: 100%;
-  }
-}
-
-footer .footer-wrap p {
-  color: #a4a6aa;
-  font-size: 0.9rem;
-  padding-top: 2.2em;
-}
-
-@media screen and (max-width: 600px) {
-  footer .footer-wrap p {
+@media screen and (min-width: 600px) {
+  footer {
     text-align: center;
-    padding: 2.5em;
   }
 }
 
-footer .footer-wrap li {
-  color: white;
+footer li {
+  font-size: 1.1rem;
   list-style-type: none;
-  display: inline-block;
-  padding: 2em 3em 0 3em;
+  padding: 1em 1em;
 }
 
-footer .footer-wrap li:hover {
-  color: #D4902A;
+footer li a {
+  color: darkgrey;
 }
 
-@media screen and (max-width: 600px) {
-  footer .footer-wrap li {
-    display: block;
-    padding: 2em 3em 0 1.5em;
+footer li a:hover {
+  color: orange;
+}
+
+@media screen and (min-width: 600px) {
+  footer li {
+    display: inline-block;
+    padding: 2em .5em;
   }
 }
 
-footer .footer-wrap li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-@media screen and (max-width: 600px) {
-  footer .footer-wrap li a {
-    font-size: 1.1rem;
+@media screen and (min-width: 700px) {
+  footer li {
+    font-size: 1.2rem;
+    padding: 2em 1em;
   }
 }
 
-footer .footer-wrap li a:hover {
-  color: #D4902A;
+@media screen and (min-width: 1000px) {
+  footer li {
+    padding: 2em 3em;
+  }
+}
+
+footer p {
+  font-size: .8rem;
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

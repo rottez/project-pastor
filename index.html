@@ -11,34 +11,60 @@
     <title>ATS Pastor</title>
 </head>
 <body>
-        <navbar class="nav-down">
-            <i id="toggleOn" class="fas fa-bars"></i>
-            <div class="nav-active">
-                <i id="toggleOff" class="far fa-window-close"></i>
-                <li id="nav-home">home</li>
-                <li id="nav-servis">servis</li>
-                <li id="nav-galerija">galerija</li>
-                <li id="nav-kontakt">kontakt</li>
+    <!-- navigation for mobile -->
+    <div class="nav">
+        <i id="toggleOn" class="fas fa-bars"></i>
+        <div class="nav-active">
+            <i id="toggleOff" class="far fa-window-close"></i>
+            <li id="nav-home">home</li>
+            <li id="nav-servis">servis</li>
+            <li id="nav-galerija">galerija</li>
+            <li id="nav-kontakt">kontakt</li>
+        </div>
+    </div>
+<!-- navigation for mobile end -->
+<!-- image for tablet/website -->
+    <div class="welcome-img">
+        <div class="navbar">
+            <div class="nav-wrapper">
+                <div class="navbar-left">
+                    <li><i class="fas fa-phone"></i> +38163/513-235</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Pap Pavla 143, 21235 Temerin</li>
+                </div>
+                <div class="navbar-right">
+                    <li><a id="xl-nav-home" href="#">home</a></li>
+                    <li><a id="xl-nav-servis" href="#">servis</a></li>
+                    <li><a id="xl-nav-galerija" href="#">galerija</a></li>
+                    <li><a id="xl-nav-kontakt" href="#">kontakt</a></li>
+                </div>
             </div>
-        </navbar>
+            
+        </div>
+  
+        <div class="wrapper">
+            <div class="welcome-a">
+                <h1>PASTOR</h1>
+                <h2>POPRAVAK AUTOMATSKIH MENJACA</h2> 
+            </div>
+        </div>    
+    </div>
+<!-- image for tablet/website end -->
   <div class="wrapper">
     <div class="bg-img">
-        
         <div class="section-a">
             <h1 class="ontop">specijalizovan servis</h1>
             <div class="bg-transparent"></div>
         </div>
-        <!-- specijalizovan-servis-end -->
+        
         <div class="section-b">
-            
             <h2>P<span>opravak</span><br>A<span>utomatskih menjaca</span><br>S<br>T<br>O<br>R</h2>
         </div>
-        <!-- welcome-text-end -->
+       
         <div class="section-c">
             <div class="bg-transparent-3"></div>
-                <a href="#"><h1>kontakt</h1></a>
+            <a href="#"><h1>kontakt</h1></a>
         </div>
-        <!-- kontakt-end -->
+      
     </div>
     <div class="content-wrapper">
         <div class="content">
@@ -335,34 +361,34 @@
             function closeLR3(){
                 document.getElementById("landrover-3-modal").style = "display: none;"
             }
-            var didScroll;
-            var lastScrollTop = 0;
-            var delta = 5;
-            var navbarHeight = $('navbar').outerHeight();
-            $(window).scroll(function(event){
-                didScroll = true;
-            });
-            setInterval(function() {
-                if (didScroll) {
-                    hasScrolled();
-                    didScroll = false;
-                }
-            }, 250);
-            function hasScrolled() {
-                var st = $(this).scrollTop();
-                if(Math.abs(lastScrollTop - st) <= delta)
-                    return;
-                if (st > lastScrollTop && st > navbarHeight){
-                    // Scroll Down
-                    $('navbar').removeClass('nav-down').addClass('nav-up');
-                } else {
-                    // Scroll Up
-                if(st + $(window).height() < $(document).height()) {
-                        $('navbar').removeClass('nav-up').addClass('nav-down');
-                    }
-                }
-            lastScrollTop = st;
-            }
+            // var didScroll;
+            // var lastScrollTop = 0;
+            // var delta = 5;
+            // var navbarHeight = $('.nav-down').outerHeight();
+            // $(window).scroll(function(event){
+            //     didScroll = true;
+            // });
+            // setInterval(function() {
+            //     if (didScroll) {
+            //         hasScrolled();
+            //         didScroll = false;
+            //     }
+            // }, 250);
+            // function hasScrolled() {
+            //     var st = $(this).scrollTop();
+            //     if(Math.abs(lastScrollTop - st) <= delta)
+            //         return;
+            //     if (st > lastScrollTop && st > navbarHeight){
+            //         // Scroll Down
+            //         $('.nav-down').removeClass('nav-down').addClass('nav-up');
+            //     } else {
+            //         // Scroll Up
+            //     if(st + $(window).height() < $(document).height()) {
+            //             $('.nav-up').removeClass('nav-up').addClass('nav-down');
+            //         }
+            //     }
+            // lastScrollTop = st;
+            // }
             $('#toggleOn').click(function(){
                $('.nav-active').show();
                $('#toggleOn').hide(); 
@@ -371,7 +397,7 @@
                 $('.nav-active').hide();
                 $('#toggleOn').show();
             });
-            //nav
+            //nav-mobile
             $("#nav-home").click(function() {
                 $('html, body').animate({
                     scrollTop: $('.bg-img').offset().top
@@ -399,6 +425,27 @@
                 }, 500);
                 $('.nav-active').hide();
                 $('#toggleOn').show();
+            });
+            //nav-xl-displays
+            $("#xl-nav-home").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.bg-img').offset().top
+                }, 500);
+            });
+            $("#xl-nav-servis").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.description').offset().top
+                }, 500);
+            });
+            $("#xl-nav-galerija").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.gallery').offset().top
+                }, 500);
+            });
+            $("#xl-nav-kontakt").click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.info').offset().top
+                }, 500);
             });
             //footer
             $("#footer-home").click(function() {

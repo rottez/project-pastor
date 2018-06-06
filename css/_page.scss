@@ -2,7 +2,6 @@ $text-color: #ffffff;
 $transparent: #D1C9F2;
 $decor-font: 'Patua One', cursive;
 $glass: 0.3;
-
 body{
     background:#FBFBFB;
     overflow-x: hidden;
@@ -16,7 +15,92 @@ body{
         margin: 0 auto
     }
 }
-
+//xl-navbar
+.navbar{
+    color: lightgrey;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.nav-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.navbar-left{
+    float:left;
+    padding: 1em 0;
+    i{
+        color: orange;
+    }
+    li{
+        display: inline;
+        padding: 0 2em;
+        font-size: 0.9rem;
+    }
+}
+.navbar-right{
+    float: right;
+    padding: 1em 0;
+    li{
+        text-transform: uppercase;
+        display: inline;
+        padding: 0 1em;
+    }
+    a{
+        color: lightgrey;
+    }
+    a:hover{
+        color: orange;
+    }
+}
+//xl-navbar-end
+//mobile-navbar
+.nav{
+    background:black;
+    text-transform: uppercase;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    color:orange;
+    animation-name: OPACITY;
+    animation-duration: 0.1s;
+     @keyframes OPACITY{
+        from { opacity: 0.1}
+        to { opacity: 1}
+    }
+    i{
+        font-size: 2rem;
+        padding: .5em;    
+    }
+    li:last-child{
+        border-bottom: 0;
+    }
+    li{
+        color:rgb(237, 240, 243);
+        list-style-type: none;
+        padding: 1em .5em 1em 1em;
+        border-bottom: 1px solid orange;
+        a:hover{
+            color: orange;
+        }
+    }
+    @media screen and(min-width: 1000px){
+        display: none;
+    }
+}
+.nav-active{
+    display: none;
+    background: black;
+    border-bottom: .5px solid orange;
+    animation-name: OPACITY;
+    animation-duration: 0.3s;
+     @keyframes OPACITY{
+        from { opacity: 0.1}
+        to { opacity: 1}
+    }  
+}
+//mobile-navbar-end
 .bg-img{
     background: linear-gradient(
         rgba(0, 0, 0, 0.3), 
@@ -32,54 +116,45 @@ body{
     @media screen and (min-width: 400px){
         height: 670px;
     }
-    @media screen and (min-width: 1000px){
+    
+    @media screen and (min-width: 500px){
         background:rgb(237, 240, 243);
+        display: none;
     }
 }
 
-.nav-active{
-    display: none;
-    background: black;
-    border-bottom: .5px solid orange;
-    animation-name: OPACITY;
-    animation-duration: 0.3s;
-     @keyframes OPACITY{
-        from { opacity: 0.1}
-        to { opacity: 1}
-    }
-}
-.nav-down{
-    background:black;
-    text-transform: uppercase;
-    z-index: 1;
-    width: 100%;
-    position: fixed;
-    color:orange;
-    animation-name: OPACITY;
-    animation-duration: 0.3s;
-     @keyframes OPACITY{
-        from { opacity: 0.1}
-        to { opacity: 1}
-    }
-    .nav-up{
-       padding: 0;
-       margin: 0;
-    }
-    i{
-        font-size: 2rem;
-        padding: .5em;
-    }
-    li:last-child{
-        border-bottom: 0;
-    }
-    li{
-        color:rgb(237, 240, 243);
-        list-style-type: none;
-        padding: 1em .5em 1em 1em;
-        border-bottom: 1px solid orange;
-        a:hover{
-            color: orange;
+.welcome-img{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/r8.jpg) 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    color: #eee;
+    text-align:center;
+    .welcome-a{
+        padding-top: 150px;
+        h1 {
+            color: lightgrey;
+            font-size: 5rem;
+            letter-spacing: 15px;
+            font-family: $decor-font;
         }
+        h2 {
+            font-size: 2rem;
+            color: orange;
+            @media screen and (min-width: 500px) and (max-width: 999px){
+                padding-top: .5em;
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+    }
+    @media screen and (max-width: 500px){
+        background:rgb(237, 240, 243);
+        display: none;
     }
 }
 .section-a{
@@ -178,6 +253,7 @@ body{
         }
     }
 .content {
+    background: #333;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr; 
@@ -256,7 +332,7 @@ body{
             padding-top: 7em;
             width: 100%;
             height: auto;
-            box-shadow: 0px 18px 15px -19px rgba(0,0,0,0.75);
+            box-shadow: 0px 18px 15px -19px rgba(0,0,0,0.2);
             @media screen and (min-width: 323px){
                 padding-top: 5em;
             }
@@ -382,10 +458,10 @@ body{
             padding: .5em 0;
             font-weight: bold;
             a{
+                text-transform: uppercase;
                 text-decoration: none;
-                color:#77674F;
+                color:#3b5998;
             }
-            
         }
     }
 }
@@ -401,8 +477,6 @@ body{
     overflow: auto;
     background: rgba(0,0,0, 0.9);
     .modal-content{
-        // -webkit-animation-name: smallToBig;
-        // -webkit-animation-duration: 0.5s;
         animation-name: OPACITY;
         animation-duration: 0.3s;
         padding-top: 11em;
@@ -415,10 +489,6 @@ body{
         @media screen and (min-width: 1000px){
             padding-top: 5em;
         }
-        // @-webkit-keyframes smallToBig{
-        //     from { width: 30%;}
-        //     to { width: 95%;}
-        // }
         img{
             width: 99%;
             height: auto;
@@ -426,7 +496,6 @@ body{
             @media screen and (min-width: 1000px){
                 width: 50%;
             }
-            
         }
         i{
             padding: .5em 0;
@@ -495,51 +564,39 @@ body{
 }
 footer{
     background: #333;
-    width: 100%;
-    height: 125px;
-    @media screen and (max-width: 600px){
-        height: auto;
-    }
+    color: darkgrey;
     .footer-wrap{
-        text-align: center;
-        width: 1000px;
+        width: 90%;
         margin: 0 auto;
-        @media screen and (max-width: 600px){
-            text-align: left;
-            width: 100%;
-        }
-        p{
-            color:#a4a6aa;
-            font-size: 0.9rem;
-            padding-top: 2.2em;
-            @media screen and (max-width: 600px){
-                text-align: center;
-                padding: 2.5em;
-            }
-        }
-        li {
-            color:white;
-            list-style-type: none;
-            display: inline-block;
-            padding: 2em 3em 0 3em;
+    }
+    @media screen and (min-width: 600px){
+        text-align: center;
+    }
+    li{
+        font-size: 1.1rem; 
+        list-style-type:none;
+        padding: 1em 1em;
+        a{
+            color: darkgrey;
             &:hover{
-                color: #D4902A;
-            }
-            @media screen and (max-width: 600px){
-                display: block;
-                padding: 2em 3em 0 1.5em;
-            }
-            a{
-                
-                text-decoration: none;
-                font-size: 1.2rem;
-                @media screen and (max-width: 600px){
-                    font-size: 1.1rem;
-                }
-                &:hover{
-                    color: #D4902A;
-                }
+                color: orange;
             }
         }
+        @media screen and (min-width: 600px){
+            display: inline-block;
+            padding: 2em .5em;
+        }
+        @media screen and (min-width: 700px){
+            font-size: 1.2rem;
+            padding: 2em 1em; 
+        }
+        @media screen and (min-width: 1000px){
+            padding: 2em 3em;
+        }
+    }
+    p{
+        font-size: .8rem;
+        text-align: center;
+        padding-bottom: 2em;
     }
 }
