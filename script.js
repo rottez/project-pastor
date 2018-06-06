@@ -3,7 +3,7 @@ window.onscroll = () => {
     const y = document.querySelector('#xl-nav-servis');
     const z = document.querySelector('#xl-nav-galerija');
     const w = document.querySelector('#xl-nav-kontakt');
-    if(this.scrollY <= 950) x.style="border-bottom: 2px solid orange;"
+    if(this.scrollY > 0 && this.scrollY < 980) x.style="border-bottom: 2px solid orange;"
         else x.style="border-bottom: 0;"
     if(this.scrollY > 951 && this.scrollY < 1450) y.style="border-bottom: 2px solid orange;"
         else y.style="border-bottom: 0;"
@@ -11,6 +11,8 @@ window.onscroll = () => {
         else z.style="border-bottom: 0;"
     if(this.scrollY > 2101) w.style="border-bottom: 2px solid orange;"
         else w.style="border-bottom: 0;"
+    if(this.scrollY < 979 && this.scrollY == 0) x.style="border-bottom: 2px solid orange;"
+    
 };
 
 // auid-modals
