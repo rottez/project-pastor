@@ -2,6 +2,7 @@ $text-color: #ffffff;
 $transparent: #D1C9F2;
 $decor-font: 'Ubuntu', sans-serif;
 $glass: 0.3;
+
 body{
     background:#FBFBFB;
     overflow-x: hidden;
@@ -152,6 +153,11 @@ body{
                 width: 95%;
                 margin: 0 auto;
             }
+        }
+        h3 {
+            opacity: 0.8;
+            padding-top: 10em;
+            font-size: 1.5rem;
         }
     }
     @media screen and (max-width: 500px){

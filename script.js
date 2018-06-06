@@ -9,7 +9,7 @@ window.onscroll = () => {
         else y.style="border-bottom: 0;"
     if(this.scrollY > 1451 && this.scrollY < 2100) z.style="border-bottom: 2px solid orange;"
         else z.style="border-bottom: 0;"
-    if(this.scrollY > 2101) w.style="border-bottom: 2px solid orange;"
+    if(this.scrollY > 2100) w.style="border-bottom: 2px solid orange;"
         else w.style="border-bottom: 0;"
     if(this.scrollY < 979 && this.scrollY == 0) x.style="border-bottom: 2px solid orange;"
     
