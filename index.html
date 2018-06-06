@@ -62,7 +62,7 @@
        
         <div class="section-c">
             <div class="bg-transparent-3"></div>
-            <a href="#"><h1>kontakt</h1></a>
+            <a id="bg-img-kontakt" href="#"><h1>kontakt</h1></a>
         </div>
       
     </div>
@@ -396,6 +396,12 @@
             $('#toggleOff').click(function(){
                 $('.nav-active').hide();
                 $('#toggleOn').show();
+            });
+            //kontakt main img
+            $("#bg-img-kontakt").click(function(){
+                $('html, body').animate({
+                    scrollTop: $('.info').offset().top
+                }, 1000);
             });
             //nav-mobile
             $("#nav-home").click(function() {
