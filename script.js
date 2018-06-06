@@ -1,3 +1,18 @@
+window.onscroll = () => {
+    const x = document.querySelector('#xl-nav-home');
+    const y = document.querySelector('#xl-nav-servis');
+    const z = document.querySelector('#xl-nav-galerija');
+    const w = document.querySelector('#xl-nav-kontakt');
+    if(this.scrollY <= 950) x.style="border-bottom: 2px solid orange;"
+        else x.style="border-bottom: 0;"
+    if(this.scrollY > 951 && this.scrollY < 1450) y.style="border-bottom: 2px solid orange;"
+        else y.style="border-bottom: 0;"
+    if(this.scrollY > 1451 && this.scrollY < 2100) z.style="border-bottom: 2px solid orange;"
+        else z.style="border-bottom: 0;"
+    if(this.scrollY > 2101) w.style="border-bottom: 2px solid orange;"
+        else w.style="border-bottom: 0;"
+};
+
 // auid-modals
 function audiModal1(){
     document.getElementById("audi-1-modal").style = "display: block;"
