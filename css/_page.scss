@@ -33,6 +33,9 @@ body{
     height: 50px;
     background: black;
     z-index: 1;
+    @media screen and (max-width: 1000px){
+        display: none;
+    }
 }
 .nav-wrapper{
     width: 1000px;

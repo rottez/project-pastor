@@ -40,6 +40,12 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .nav-wrapper {
   width: 1000px;
   margin: 0 auto;
