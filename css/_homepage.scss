@@ -1,0 +1,487 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// reset-end
+$break-medium: 630px;
+$break-large: 1025px;
+$background: #dbdbd9;
+$main-color: orange;
+$secondary-color: #eee;
+$third-color: #333;
+$main-font: 'Work Sans', sans-serif;
+//
+body {
+	background: $background;
+	font-family: $main-font;
+	color: $secondary-color;
+	
+}
+.bg-img {
+	background:
+	linear-gradient(
+	 rgba(0, 0, 0, 0.7), 
+	 rgba(0, 0, 0, 0.9)
+	),
+	url(../img/second.jpeg) no-repeat 0;
+	height: 580px;
+	width: 100%;
+		@media screen and (min-width: $break-medium){
+			height: 720px;
+		}
+		@media screen and (min-width: $break-large){
+			height: 600px;
+		}
+	// nav {
+	// 	background: #404142;
+	// 	overflow: hidden;
+	// 	position: fixed;
+	// 	width: 100%;
+	// 	top: 0;
+	// 	height: 3.4em;
+	// 	@media screen and (min-width: $break-large) {
+	// 		display: none;
+	// 	}
+	// 	// border-bottom: 0.2px solid $secondary-color;
+	// 	.dropdown{
+	// 		display: none;
+	// 		text-align: left;
+	// 		i {
+	// 			font-size: 2rem;
+	// 		}
+	// 		a {
+	// 		  font-size: .8rem;
+	// 		  color: $secondary-color;
+	// 		  text-decoration: none;
+	// 		  text-transform: uppercase;
+	// 		  padding: .2em 1em;
+	// 		  @media screen and (min-width: 350px){
+	// 			  font-size: 1rem;
+	// 		  }
+	// 		}
+	// 	}
+	// 	i {
+	// 		font-size: 2rem;
+	// 		color: $secondary-color;
+	// 		text-align: left;
+	// 		padding: .3em 0 .3em .3em;
+	// 	}
+	// }
+	.navbar-sm{
+		position: fixed;
+		width: 100%;
+		background-color: rgba(0,0,0,0.9);
+		i{
+			padding: .5em .8em;
+			color: orange;
+			font-size: 2rem;
+		}
+		@media screen and (min-width: $break-large){
+			display: none;
+		}
+	}
+	.modal{
+		text-align: left;
+		display: none;
+		position: fixed;
+		z-index: 1;
+		top: 8%;
+		width: 30%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.9);
+		@media screen and (min-width: $break-large){
+			display: none;
+		}
+		li{
+			list-style-type: none;
+			text-transform: uppercase;
+			padding: 1em 1em;
+			padding-top: 2em;
+			color: orange;
+		}
+	}
+	.navbar{
+		width: 100%;
+		height: 50px;
+		@media screen and (max-width:$break-large){
+			display: none;
+		}
+	}
+	@keyframes transition{
+		from{opacity: 0.1}
+		to{opacity: 1}
+	} 
+	.nav-left{
+		display: none;
+		float: left;
+		h3{
+			font-size: 1rem;
+			padding-top: .4em;
+			span{
+				color:orange;
+			}	
+		}
+		p{
+			color: orange;
+			margin: 0;
+			padding: 0;
+			font-size: .8rem;
+		}
+	}
+	.nav-right{
+		float: right;
+		padding-top: .9em;
+		li{
+			text-transform: capitalize;
+			font-size: 1.1rem;
+			list-style-type: none;
+			display: inline;
+			padding: 0 1em;
+			cursor:pointer;
+			&:hover{
+				color: orange;
+			}
+		}
+	}
+	.header-wrapper {
+		padding: 0 0.5em;
+		color: $background;
+		@media screen and (min-width: $break-medium){
+			padding: 0;
+			width: 80%;
+			margin: 0 auto;
+		}
+		@media screen and (min-width: $break-large){
+			width: 1000px;
+			margin: 0 auto;
+		}
+	}
+	h2 {
+		color: $main-color;
+		padding-top: 4em;
+		padding-left: .3em;
+		font-size: 1.1rem;
+		@media screen and (min-width: $break-medium){
+			padding-top: 5em;
+		}
+	}
+	h1 {
+		font-size: 3rem;
+		@media screen and (min-width: $break-medium){
+			font-size: 3.3rem;
+			width: 70%;
+		}
+		@media screen and (min-width: $break-large){
+			font-size: 3.3rem;
+		}
+	}
+	p {
+		padding-top: 3em;
+		font-size: 1rem;
+		@media screen and (min-width: 372px){
+			width: 80%;		
+			}
+		@media screen and (min-width: $break-medium){
+			font-size: 1.2rem;
+			width: 90%;
+		}
+		@media screen and (min-width: $break-large){
+			width: 600px;
+		}
+	}
+	ul {
+		margin-top: 3em;
+		text-transform: uppercase;
+		@media screen and (min-width: 372px){
+		margin-top: 4em;		
+		}
+		@media screen and (min-width: $break-medium){
+			margin-top: 5em;
+		}
+		#mod {
+			background:
+			linear-gradient(
+			rgba(116, 110, 110, 0.383), 
+			rgba(131, 124, 124, 0.383)
+			),;
+			color: $secondary-color;
+		}
+		#bottom{
+			color: black;
+		}
+		a {
+			cursor: pointer;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			background: $main-color;
+			color: $secondary-color;
+			font-size: 1rem;
+			margin: 1em 0;
+			padding: .5em 0;
+			@media screen and (min-width: $break-medium){
+				text-align: left;
+				font-size: 1.2rem;
+				width: 200px;
+				padding: 1em 1em;
+			}
+			@media screen and (min-width: $break-large){
+				padding: .5em 1em;
+			}	
+		}
+	}
+}
+// header-end
+@media screen and (min-width: $break-large){
+	.content > div {
+		padding: 50px 0;	
+	}
+}
+.content {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	@media screen and (min-width: $break-large){
+		grid-template-columns: 1fr 1fr;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	#section-a {
+		margin-top: 5em;
+	}
+	img {
+		width: 90%;
+		height: auto;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+		@media screen and (min-width: $break-medium){
+			width: 75%;
+			border: 1px solid grey;
+			padding: 5px;
+		}
+		@media screen and (min-width: 550px){
+			width: 75%;
+		}
+		@media screen and (min-width: 850px){
+			width: 50%;
+		}
+		@media screen and (min-width: $break-large){
+			border: 1px solid grey;
+			padding: 5px;
+			transition: width 0.3s;
+			width: 80%;
+			border-radius: 5px;
+			&:hover {
+				transition: width 0.2s;
+				width: 85%;
+			}
+		}
+	}
+	#section-b {
+		margin-top: 1em;
+		color: $third-color;
+		@media screen and (min-width: $break-large){
+			margin-top: 70px;
+		}
+		h2 {
+			font-size: 1.3rem;
+			@media screen and (min-width: $break-medium){
+				font-size: 1.6rem;
+				padding: .5em;
+			}
+			@media screen and (min-width: $break-large){
+				font-size: 1.8rem;
+			}
+		}
+		p {
+			margin-top: 1em;
+			font-size: 1rem;
+			@media screen and (min-width: $break-medium){
+				font-size: 1.2rem;
+				width: 90%;
+				margin: 0 auto;
+			}
+			@media screen and (min-width: $break-large){
+				padding: 30px 0 25px 0;
+				font-size: 1rem;
+				width: 60%;
+				margin: 0 auto;
+			}
+		}
+		button {
+			background: $main-color;
+			border: none;
+			border-radius: 2px;
+			color: #333;
+			font-size: .7rem;
+			@media screen and (min-width: $break-medium){
+				border-radius: 5px;
+				font-size: 1rem;
+				margin: .2em
+			}
+			@media screen and (min-width: $break-large){
+				border-radius: 5px;
+				font-size: .7rem;
+				margin: .5em 0;
+			}
+		}
+	}
+}
+// content-end
+.bg-color {
+	margin-top: 5em;
+	background: $main-color;
+	.skills-wrapper > div {
+		padding: .5em;
+		@media screen and (min-width: $break-large){
+			padding: 2em;
+		}
+	}
+	.skills-wrapper {
+		padding: 2em 0;
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		color: $third-color;
+		@media screen and (min-width: $break-large){
+			width: 1000px;
+			margin: 0 auto;
+			padding-bottom: 2em;
+		}
+	}
+	i {
+		font-size: 3rem;
+		@media screen and (min-width: $break-medium){
+			font-size: 4.5rem;
+		}
+		@media screen and (min-width: $break-large){
+			font-size: 5rem;
+		}
+	}
+}
+// skills-end
+.profile {
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+	@media screen and (min-width: $break-large){
+		width: 1000px;
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+		padding-bottom: 3em;
+	}
+	img {
+		width: 180px;
+		height: auto;
+		border-radius: 400px;
+		@media screen and (min-width: $break-medium){
+			width: 200px;
+		}
+	}
+	p {
+		color: $third-color;
+		font-size: 1rem;
+		margin-top: 1em;
+		@media screen and (min-width: $break-medium){
+			font-size: 1.2rem;
+		}
+	}
+	// second div
+	h2 {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		@media screen and (min-width: $break-medium){
+			font-size: 1.5rem;
+		}
+		@media screen and (min-width: $break-large){
+			padding-top: 2.2em;
+		}
+	}
+	h1 {
+		font-size: 1.4rem;
+		padding: .3em;
+		@media screen and (min-width: $break-medium){
+			font-size: 1.8rem;
+		}
+		@media screen and (min-width: $break-large){
+			font-size: 3rem;
+			padding: .5em;
+		}
+		a {
+			color: $third-color;
+			text-decoration: none;
+		}
+		a:hover {
+			transition: color 0.3s;
+			color: $secondary-color;
+		}
+	}
+	h3 {
+		color: $third-color;
+		font-size: 1rem;
+		padding: .5em 1em;
+		padding-bottom: 2em;
+		@media screen and (min-width: $break-medium){
+			font-size: 1.1rem;
+			width: 70%;
+			margin: 0 auto;
+		}
+		@media screen and (min-width: $break-large){
+			padding: 1.5em 0 0 0;
+			margin: 0 auto;
+		}
+	}
+}
+footer {
+	background: #333;
+	height: 160px;
+	color: lightgrey;
+	text-align: center;
+	.footer-container {
+		padding-top: 2em;
+		@media screen and (min-width: $break-large){
+			padding-top: 3em;
+		}
+		a {
+			font-size: 2.8rem;
+			padding: .3em .4em;
+			color: lightgrey;
+			@media screen and (min-width: $break-medium){
+				padding: .8em 1.2em;
+			}
+			@media screen and (min-width: $break-large){
+				padding: 1em 2.3em;
+			}
+		}
+		a:hover {
+			transition: color 0.4s;
+			color: $main-color;
+		}
+	}
+	.copyright {
+		font-size: .9rem;
+		margin-top: 2em;
+		@media screen and (min-width: $break-large){
+			font-size: .8rem;
+		}
+	}
+}
