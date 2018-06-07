@@ -3,8 +3,10 @@ window.onscroll = () => {
     const y = document.querySelector('#xl-nav-servis');
     const z = document.querySelector('#xl-nav-galerija');
     const w = document.querySelector('#xl-nav-kontakt');
-    if(this.scrollY > 0 && this.scrollY < 980) x.className="nav-highlight";
-        else x.className="";
+    // if(this.scrollY > 0 && this.scrollY < 980) x.className="nav-highlight";
+    //     else x.className="";
+    if(this.scrollY > 980) x.style="";
+        else x.style="color:orange;"
     if(this.scrollY > 951 && this.scrollY < 1450) y.className="nav-highlight";
         else y.className="";
     if(this.scrollY > 1451 && this.scrollY < 2100) z.className="nav-highlight";
